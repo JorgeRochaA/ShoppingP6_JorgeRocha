@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingP6_JorgeRocha.Views.AppLoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="appBackground"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="50" VerticalOptions="Center">
+
+            <Entry Margin="5" PlaceholderColor="White" TextColor="White" x:Name="txtUsername" Placeholder="Email" FontSize="25" Keyboard="Email"/>
+
+            <StackLayout>
+
+                <Entry Margin="5" PlaceholderColor="White" TextColor="White" x:Name="txtPassword" Placeholder="Password" FontSize="25" IsPassword="True" Keyboard="Default"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="End" VerticalOptions="Center">
+                    <Label Text="Show Password" TextColor="White" FontSize="Small" VerticalOptions="Center"/>
+                    <Switch x:Name="showPassword" ThumbColor="#1E2F5C" IsToggled="False" Toggled="togglePassword" />
+                </StackLayout>
+
+            </StackLayout>
+
+            <Button Margin="5" x:Name="btnLogin" Text="Login" CornerRadius="5"/>
+            <Button Margin="5" x:Name="btnSignUp" Text="Sign Up" CornerRadius="5" BackgroundColor="#1E2F5C" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -14,7 +14,7 @@ namespace ShoppingP6_JorgeRocha
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new AppLoginPage());
         }
 
         protected override void OnStart()
