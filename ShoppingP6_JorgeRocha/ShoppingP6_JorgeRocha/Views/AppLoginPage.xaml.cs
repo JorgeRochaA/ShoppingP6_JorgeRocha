@@ -25,5 +25,10 @@ namespace ShoppingP6_JorgeRocha.Views
                  txtPassword.IsPassword = true;
             }
         }
+
+        private async void signUp(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserSignUpPage());
+        }
     }
 }

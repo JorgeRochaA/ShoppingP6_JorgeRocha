@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingP6_JorgeRocha.Views.UserSignUpPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="appBackground"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="50" VerticalOptions="Center">
+
+            <Entry x:Name="txtName" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Name"/>
+            <Entry x:Name="txtEmail" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Email"/>
+            <Entry x:Name="txtPassword" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Password" IsPassword="True"/>
+            <Entry x:Name="txtEmailBackup" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Backup Email"/>
+            <Entry x:Name="txtPhone" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Phone Number"/>
+
+            <Picker x:Name="pickUserRole" Margin="5" TitleColor="White" TextColor="White" Title="Select a user role"/>
+            <Picker x:Name="pickCountry" Margin="5" TitleColor="White" TextColor="White" Title="Select a country"/>
+
+            <Button Margin="5" x:Name="btnSignUp" Text="Sign Up" CornerRadius="5" BackgroundColor="#1E2F5C"/>
+            <Button Margin="5" x:Name="btnCancel" Text="Cancel" CornerRadius="5" BackgroundColor="#B71C1C" Clicked="cancel"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
