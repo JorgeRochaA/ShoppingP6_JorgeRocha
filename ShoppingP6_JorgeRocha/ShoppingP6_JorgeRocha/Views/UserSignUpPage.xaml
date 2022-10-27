@@ -15,7 +15,7 @@
             <Entry x:Name="txtEmailBackup" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Backup Email"/>
             <Entry x:Name="txtPhone" Margin="5" PlaceholderColor="White" TextColor="White" Placeholder="Phone Number"/>
 
-            <Picker x:Name="pickUserRole" Margin="5" TitleColor="White" TextColor="White" Title="Select a user role"/>
+            <Picker x:Name="pickUserRole" Margin="5" TitleColor="White" TextColor="White" Title="Select a user role" ItemDisplayBinding="{Binding UserRoleDescription}"/>
             <Picker x:Name="pickCountry" Margin="5" TitleColor="White" TextColor="White" Title="Select a country"/>
 
             <Button Margin="5" x:Name="btnSignUp" Text="Sign Up" CornerRadius="5" BackgroundColor="#1E2F5C"/>
