@@ -31,5 +31,26 @@ namespace ShoppingP6_JorgeRocha.Views
         {
             await Navigation.PopAsync();
         }
+
+        private async void signUp(object sender, EventArgs e)
+        {
+            bool response = await viewModel.addNewUser(
+                txtName.Text.Trim(),
+                txtEmail.Text.Trim(),
+                txtPassword.Text.Trim(),
+                txtEmailBackup.Text.Trim(),
+                txtPhone.Text.Trim()
+                );
+
+            if (response)
+            {
+                await DisplayAlert(":)","User Created Succesfully","OK");
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                await DisplayAlert(":C", "There was a problem creating the user", "OK");
+            }
+        }
     }
 }
